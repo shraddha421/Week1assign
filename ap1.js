@@ -10,6 +10,11 @@
         
         $scope.check=function()
         {
+            if ($scope.lunchitems=="")
+            {
+                $scope.txt="Please Enter Data First"
+                return;
+            }
             $scope.items=$scope.lunchitems.split(',')
             var total=$scope.items.length;
             var count=0
